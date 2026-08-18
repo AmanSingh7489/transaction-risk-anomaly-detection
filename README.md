@@ -1,3 +1,9 @@
+## Status
+
+🚧 **Ongoing Project**
+
+Currently developing the transaction analysis and risk assessment components.
+
 # Transaction Risk & Anomaly Detection Analysis
 
 A data-driven project focused on analyzing transaction data to identify
