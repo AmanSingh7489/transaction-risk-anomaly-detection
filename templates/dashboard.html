@@ -1,0 +1,143 @@
+<body>
+
+    <!-- ===========================
+         Enterprise Navbar
+    ============================ -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            🛡️ TRDA Dashboard
+        </div>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                placeholder="Search Customer ID...">
+
+            <button>🔍</button>
+
+        </div>
+
+        <div class="right-menu">
+
+            <span class="notification">🔔</span>
+
+            <span class="profile">
+                👤 Aman Singh
+            </span>
+
+        </div>
+
+    </nav>
+
+    <!-- ===========================
+         Dashboard Container
+    ============================ -->
+
+    <div class="dashboard-container">
+
+        <!-- KPI Cards -->
+
+        <div class="cards">
+
+            <div class="card total-card">
+
+                <div class="icon">📊</div>
+
+                <h2>Total Transactions</h2>
+
+                <h3 id="total">Loading...</h3>
+
+            </div>
+
+            <div class="card fraud-card">
+
+                <div class="icon">🚨</div>
+
+                <h2>Fraud Transactions</h2>
+
+                <h3 id="fraud">Loading...</h3>
+
+            </div>
+
+            <div class="card rate-card">
+
+                <div class="icon">📈</div>
+
+                <h2>Fraud Rate</h2>
+
+                <h3 id="rate">Loading...</h3>
+
+            </div>
+
+        </div>
+
+        <!-- Charts -->
+
+        <div class="charts">
+
+            <div class="chart-card">
+
+                <h2>Fraud Transactions by Category</h2>
+
+                <canvas id="categoryChart"></canvas>
+
+            </div>
+
+            <div class="chart-card">
+
+                <h2>Monthly Fraud Trend</h2>
+
+                <canvas id="monthlyChart"></canvas>
+
+            </div>
+
+        </div>
+
+        <!-- High Risk Table -->
+
+        <h2 style="text-align:center; margin-top:50px;">
+            Recent High Risk Transactions
+        </h2>
+
+        <div class="table-container">
+
+            <table id="transactionTable">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Transaction ID</th>
+
+                        <th>Customer ID</th>
+
+                        <th>Amount</th>
+
+                        <th>Category</th>
+
+                        <th>Date</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- JavaScript -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>

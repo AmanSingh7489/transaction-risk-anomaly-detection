@@ -1,0 +1,551 @@
+/* Whole Page */
+body{
+
+    margin:0;
+
+    padding:25px;
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:linear-gradient(to right,#eef2f3,#dfe9f3);
+
+}
+
+/* Heading */
+h1{
+
+    text-align:center;
+
+    font-size:48px;
+
+    color:#1f3c88;
+
+    margin-bottom:40px;
+
+    letter-spacing:1px;
+
+}
+
+/* Cards Container */
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+    margin-bottom:50px;
+
+}
+
+/* Individual Card */
+.card {
+    width: 260px;
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+.card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0px 8px 18px rgba(0,0,0,0.25);
+
+}
+
+/* Card Title */
+.card h2 {
+
+    color: #34495e;
+
+}
+
+/* Card Value */
+.card h3 {
+
+    font-size: 32px;
+
+    color: #3498db;
+
+}
+/* ===========================
+   High Risk Transactions Table
+=========================== */
+
+.table-container{
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:18px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+    max-height:500px;
+
+    overflow-y:auto;
+
+}
+
+/* Table */
+
+#transactionTable{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+/* Header */
+
+#transactionTable thead{
+
+    background:#1f3c88;
+
+    color:white;
+
+    position:sticky;
+
+    top:0;
+
+}
+
+/* Cells */
+
+#transactionTable th,
+#transactionTable td{
+
+    padding:14px;
+
+    text-align:center;
+
+    border-bottom:1px solid #ddd;
+
+}
+
+/* Alternate Row Colors */
+
+#transactionTable tbody tr:nth-child(even){
+
+    background:#f5f5f5;
+
+}
+
+/* Hover Effect */
+
+#transactionTable tbody tr:hover{
+
+    background:#dfefff;
+
+}
+/* =======================================
+   Premium KPI Cards
+======================================= */
+
+.card{
+
+    width:280px;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    color:white;
+
+    text-align:center;
+
+    transition:0.35s;
+
+    box-shadow:0px 10px 25px rgba(0,0,0,0.20);
+
+}
+
+.card:hover{
+
+    transform:translateY(-12px) scale(1.03);
+
+}
+
+/* Individual Card Colors */
+
+.total-card{
+
+    background:linear-gradient(135deg,#3498db,#1f5fbf);
+
+}
+
+.fraud-card{
+
+    background:linear-gradient(135deg,#e74c3c,#c0392b);
+
+}
+
+.rate-card{
+
+    background:linear-gradient(135deg,#2ecc71,#27ae60);
+
+}
+
+/* Icons */
+
+.icon{
+
+    font-size:50px;
+
+    margin-bottom:15px;
+
+}
+
+/* Headings */
+
+.card h2{
+
+    font-size:24px;
+
+    margin-bottom:20px;
+
+    color:white;
+
+}
+
+/* Values */
+
+.card h3{
+
+    font-size:42px;
+
+    font-weight:bold;
+
+    color:white;
+
+}
+/* ==========================================
+   Enterprise Navigation Bar
+========================================== */
+
+/* =====================================
+   Enterprise Navbar
+===================================== */
+
+.navbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:#1f3c88;
+
+    padding:15px 40px;
+
+    color:white;
+
+    box-shadow:0px 5px 15px rgba(0,0,0,0.15);
+
+}
+
+.logo{
+
+    font-size:28px;
+
+    font-weight:bold;
+
+}
+
+.search-box{
+
+    display:flex;
+
+    gap:10px;
+
+}
+
+.search-box input{
+
+    width:280px;
+
+    padding:10px 15px;
+
+    border:none;
+
+    border-radius:25px;
+
+    outline:none;
+
+    font-size:16px;
+
+}
+
+.search-box button{
+
+    border:none;
+
+    background:#3498db;
+
+    color:white;
+
+    padding:10px 18px;
+
+    border-radius:25px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+.search-box button:hover{
+
+    background:#217dbb;
+
+}
+
+.right-menu{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:25px;
+
+}
+
+.notification{
+
+    font-size:28px;
+
+    cursor:pointer;
+
+}
+
+.profile{
+
+    background:white;
+
+    color:#1f3c88;
+
+    padding:10px 18px;
+
+    border-radius:25px;
+
+    font-weight:bold;
+
+}
+.logo{
+
+    font-size:30px;
+
+    font-weight:bold;
+
+}
+
+.nav-links{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:30px;
+
+}
+
+.nav-links li{
+
+    list-style:none;
+
+}
+
+.nav-links a{
+
+    text-decoration:none;
+
+    color:white;
+
+    font-size:20px;
+
+    transition:0.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:#ffd43b;
+
+}
+/* ===================================
+   Enterprise Layout
+=================================== */
+
+.navbar{
+
+    height:70px;
+
+    background:#1f3c88;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 40px;
+
+    color:white;
+
+}
+
+.logo{
+
+    font-size:30px;
+
+    font-weight:bold;
+
+}
+
+.nav-links{
+
+    display:flex;
+
+    gap:30px;
+
+    list-style:none;
+
+}
+
+.nav-links a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:18px;
+
+}
+
+.dashboard{
+
+    display:flex;
+
+}
+
+.sidebar{
+
+    width:240px;
+
+    min-height:100vh;
+
+    background:#243447;
+
+    padding:30px;
+
+}
+
+.sidebar h3{
+
+    color:white;
+
+}
+
+.sidebar a{
+
+    display:block;
+
+    color:white;
+
+    text-decoration:none;
+
+    margin:20px 0;
+
+    font-size:18px;
+
+}
+
+.sidebar a:hover{
+
+    color:#4da6ff;
+
+}
+
+.content{
+
+    flex:1;
+
+    padding:30px;
+
+}
+/* ==============================
+   Charts Layout
+============================== */
+
+.charts{
+
+    display:flex;
+
+    gap:30px;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    margin:40px;
+
+}
+
+.chart-card{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+}
+
+.chart-card h2{
+
+    text-align:center;
+
+    margin-bottom:20px;
+
+}
+/* ===========================
+   Dashboard Container
+=========================== */
+
+.dashboard-container{
+
+    max-width:1500px;
+
+    margin:40px auto;
+
+    padding:20px;
+
+}
+@media(max-width:1000px){
+
+.cards{
+
+    grid-template-columns:1fr;
+
+}
+
+.charts{
+
+    grid-template-columns:1fr;
+
+}
+
+}
